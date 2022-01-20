@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Extensions",
+    "path": "folders/Objects/Extensions.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_shader_end",

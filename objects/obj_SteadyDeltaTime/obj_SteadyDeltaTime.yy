@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Steady Delta Time",
-    "path": "folders/Steady Delta Time.yy",
+    "path": "folders/Extensions/Steady Delta Time.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_SteadyDeltaTime",

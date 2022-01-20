@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Properties",
-    "path": "folders/TweenGMS/Scripts/Properties.yy",
+    "path": "folders/Extensions/TweenGMS/Scripts/Properties.yy",
   },
   "resourceVersion": "1.0",
   "name": "TGMS_BuildProperty",

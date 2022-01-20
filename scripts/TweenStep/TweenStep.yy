@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": " Tween Tools",
-    "path": "folders/TweenGMS/Scripts/ Tween Tools.yy",
+    "path": "folders/Extensions/TweenGMS/Scripts/ Tween Tools.yy",
   },
   "resourceVersion": "1.0",
   "name": "TweenStep",

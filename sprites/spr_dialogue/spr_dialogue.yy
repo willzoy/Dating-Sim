@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Dialog GUI",
+    "path": "folders/Sprites/Dialog GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dialogue",

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": " Tween Main",
-    "path": "folders/TweenGMS/Scripts/ Tween Main.yy",
+    "path": "folders/Extensions/TweenGMS/Scripts/ Tween Main.yy",
   },
   "resourceVersion": "1.0",
   "name": "TweenScript",

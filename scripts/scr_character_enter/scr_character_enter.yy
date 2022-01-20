@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Dialog Scene Handling",
+    "path": "folders/Scripts/Dialog Scene Handling.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_character_enter",
