@@ -44,6 +44,7 @@
     {"id":{"name":"TPGrid","path":"scripts/TPGrid/TPGrid.yy",},"order":5,},
     {"id":{"name":"obj_continue","path":"objects/obj_continue/obj_continue.yy",},"order":1,},
     {"id":{"name":"scr_character_enter","path":"scripts/scr_character_enter/scr_character_enter.yy",},"order":3,},
+    {"id":{"name":"scr_scripting","path":"scripts/scr_scripting/scr_scripting.yy",},"order":4,},
     {"id":{"name":"script_test","path":"scripts/script_test/script_test.yy",},"order":0,},
     {"id":{"name":"TweenIsPaused","path":"scripts/TweenIsPaused/TweenIsPaused.yy",},"order":4,},
     {"id":{"name":"TGMS_EventCallbacks","path":"scripts/TGMS_EventCallbacks/TGMS_EventCallbacks.yy",},"order":7,},
