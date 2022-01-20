@@ -1,0 +1,75 @@
+	
+	Stephen Loney
+    Contact: StephenLoney86@gmail.com
+    Twitter: @8BitWarrior
+    
+    [Steady Delta Time]
+        Version 1.2.0
+    
+    [Setup]
+        Create a single instance of obj_SteadyDeltaTime, ONLY ONCE, at the start of your game.
+        By default, obj_SteadyDeltaTime is persistent.
+        Avoid accidentally destroying or deactivating instances of obj_SteadyDeltaTime.
+    
+    [Delta Timing]
+        Delta timing allows you to adjust values at a consistent rate regardless of room speed or frame rate.
+        Variables are adjusted by a specified change value over 1 second multiplied by the delta time.   
+    
+        Here are some examples of how to use the global delta timing variable [global.dt_steady]:
+    
+            pixelsPerSecond = 100; // Pixels to move during 1 second
+            x += pixelsPerSecond * global.dt_steady; // Move x right by multiplying pixels per second by the delta time
+        
+            healthPerSecond = 5; // Health to add over 1 second
+            health = health + (healthPerSecond * global.dt_steady);
+        
+            // Turn counter-clockwise by 45 degrees every second 
+            direction -= 45 * global.dt_steady;
+        
+            // Update timer for tracking seconds elapsed
+            timerSeconds += global.dt_steady;
+
+    [Scale]
+        Changing the delta scale allows for global slow/fast motion affects for all values using [global.dt_steady].
+        You can change the delta time scale, at any time, by writing:
+    
+            obj_SteadyDeltaTime.scale = 0.0; // "Pause"
+            obj_SteadyDeltaTime.scale = 0.5; // Half speed
+            obj_SteadyDeltaTime.scale = 1.0; // Normal speed
+            obj_SteadyDeltaTime.scale = 2.0; // Double speed
+        
+    [Minimum Frame Rate]
+        To prevent sporadic delta timing values, a minimum frame rate is required.
+        If the game runs slower than the set minimum, delta timing will begin to lag behind the step udpate.
+        You can change the value at any time by writing:
+    
+            obj_SteadyDeltaTime.minFPS = 5;
+            obj_SteadyDeltaTime.minFPS = 10; // Default
+            obj_SteadyDeltaTime.minFPS = 15;
+        
+        It is advised to keep this at the default value of 10. 
+        Values set too low can increase chances of sporadic behaviour.
+        Values set too high can increase the chance of games lagging behind during heavy CPU/GPU load.
+		
+	[Unsteady Delta Timing]
+		There are situations where you may need a "raw" delta time value.
+		You can use "global.dt_unsteady" in such cases, when you don't want things steadied by a minimum frame rate.
+		For example, this could be used for an "Idle Game" when you want to calculate a player's progress
+		and include the entire time that the game's window has been out of focus.
+		
+			addCash = 25; // Money to add every second
+			cash += addCash * global.dt_unsteady;
+		
+		(Only use this if you know what you are doing!)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
